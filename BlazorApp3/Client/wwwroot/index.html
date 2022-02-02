@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BlazorApp3</title>
+    <base href="/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="BlazorApp3.Client.styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="_content/Blazored.Typeahead/blazored-typeahead.js"></script>
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script type="text/javascript" src="/tl5.js"></script>
+    <script type="text/javascript" src="/lib/l125.js"></script>
+    <script type="text/javascript" src="/locale/en_US/duckduckgo14.js"></script>
+    <script type="text/javascript" src="/util/u601.js"></script>
+    <script type="text/javascript" src="/d3038.js"></script>
+
+
+
+    <script type="text/javascript" src="/ti5.js"></script>
+
+    <script type="text/javascript">
+        {
+            function seterr(str) {
+                var error = document.getElementById('error_homepage');
+                error.innerHTML = str;
+                $(error).css('display', 'block');
+            }
+            var err = new RegExp('[\?\&]e=([^\&]+)'); var errm = new Array(); errm['2'] = 'no search.'; errm['3'] = 'search too long.'; errm['4'] = 'not UTF\u002d8 encoding.'; errm['6'] = 'too many search terms.'; if (err.test(window.location.href)) seterr('Oops, ' + (errm[RegExp.$1] ? errm[RegExp.$1] : 'there was an error.') + '&nbsp;Please try again.');
+        };
+
+        if (kurl) {
+            document.getElementById("logo_homepage_link").href += (document.getElementById("logo_homepage_link").href.indexOf('?') == -1 ? '?t=i' : '') + kurl;
+        }
+    </script>
+</body>
+
+</html>
